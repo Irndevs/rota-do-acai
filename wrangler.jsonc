@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rota-do-acai",
+  "compatibility_date": "2026-09-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./dist/public",
+    "not_found_handling": "single-page-application"
+  },
+  "main": "./dist/index.js",
+  "routes": [
+    {
+      "pattern": "rotadoacai.irndevs.com",
+      "custom_domain": true
+    }
+  ]
+}
